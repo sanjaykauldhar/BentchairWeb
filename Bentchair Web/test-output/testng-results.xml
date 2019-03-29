@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21003" started-at="2019-03-29T10:21:32Z" finished-at="2019-03-29T10:21:53Z">
+  <suite name="Default suite" duration-ms="18108" started-at="2019-03-29T13:59:34Z" finished-at="2019-03-29T13:59:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21003" started-at="2019-03-29T10:21:32Z" finished-at="2019-03-29T10:21:53Z">
-      <class name="BCW_PartnerWithUs.Seller">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_PartnerWithUs.Seller@7c16905e]" name="setUp" is-config="true" duration-ms="3634" started-at="2019-03-29T10:21:32Z" finished-at="2019-03-29T10:21:36Z">
+    <test name="Default test" duration-ms="18108" started-at="2019-03-29T13:59:34Z" finished-at="2019-03-29T13:59:52Z">
+      <class name="BCW_BentStudio.Agra">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Agra@7c16905e]" name="setUp" is-config="true" duration-ms="3362" started-at="2019-03-29T13:59:34Z" finished-at="2019-03-29T13:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSeller()[pri:0, instance:BCW_PartnerWithUs.Seller@7c16905e]" name="testSeller" duration-ms="16533" started-at="2019-03-29T10:21:36Z" finished-at="2019-03-29T10:21:52Z">
+        <test-method status="PASS" signature="testAgra()[pri:0, instance:BCW_BentStudio.Agra@7c16905e]" name="testAgra" duration-ms="13919" started-at="2019-03-29T13:59:37Z" finished-at="2019-03-29T13:59:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSeller -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_PartnerWithUs.Seller@7c16905e]" name="tearDown" is-config="true" duration-ms="799" started-at="2019-03-29T10:21:52Z" finished-at="2019-03-29T10:21:53Z">
+        </test-method> <!-- testAgra -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Agra@7c16905e]" name="tearDown" is-config="true" duration-ms="803" started-at="2019-03-29T13:59:51Z" finished-at="2019-03-29T13:59:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- BCW_PartnerWithUs.Seller -->
+      </class> <!-- BCW_BentStudio.Agra -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

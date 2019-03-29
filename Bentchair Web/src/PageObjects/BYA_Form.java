@@ -1,6 +1,7 @@
 package PageObjects;
 
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -90,6 +91,20 @@ public class BYA_Form{
 		public static WebElement error(WebDriver driver){
 
 			element = driver.findElement(By.id("error"));
+
+			return element;
+
+	}
+		public static WebElement appointment(WebDriver driver){
+
+			element = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg westend-btn']"));
+
+			return element;
+
+	}
+		public static WebElement submit(WebDriver driver){
+
+			element = driver.findElement(By.id("form_sub_btn"));
 
 			return element;
 
