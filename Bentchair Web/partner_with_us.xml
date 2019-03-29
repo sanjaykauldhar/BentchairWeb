@@ -1,0 +1,11 @@
+<suite name="PartnerWithUs">
+ 
+ <test name="TEST_PartnerWithUs">
+ <classes>
+ <class name="BCW_PartnerWithUs.Franchise" />
+ <class name="BCW_PartnerWithUs.Affiliate" />
+ <class name="BCW_PartnerWithUs.Seller" />
+ </classes>
+ </test>
+ 
+</suite>
