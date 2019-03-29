@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PartnerWithUs" duration-ms="80072" started-at="2019-03-28T13:46:37Z" finished-at="2019-03-28T13:47:57Z">
+  <suite name="Default suite" duration-ms="21003" started-at="2019-03-29T10:21:32Z" finished-at="2019-03-29T10:21:53Z">
     <groups>
     </groups>
-    <test name="TEST_PartnerWithUs" duration-ms="80072" started-at="2019-03-28T13:46:37Z" finished-at="2019-03-28T13:47:57Z">
-      <class name="BCW_PartnerWithUs.Franchise">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_PartnerWithUs.Franchise@2a2d45ba]" name="setUp" is-config="true" duration-ms="3885" started-at="2019-03-28T13:46:37Z" finished-at="2019-03-28T13:46:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFranchise()[pri:0, instance:BCW_PartnerWithUs.Franchise@2a2d45ba]" name="testFranchise" duration-ms="37039" started-at="2019-03-28T13:46:41Z" finished-at="2019-03-28T13:47:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFranchise -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_PartnerWithUs.Franchise@2a2d45ba]" name="tearDown" is-config="true" duration-ms="825" started-at="2019-03-28T13:47:18Z" finished-at="2019-03-28T13:47:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- BCW_PartnerWithUs.Franchise -->
+    <test name="Default test" duration-ms="21003" started-at="2019-03-29T10:21:32Z" finished-at="2019-03-29T10:21:53Z">
       <class name="BCW_PartnerWithUs.Seller">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_PartnerWithUs.Seller@20e2cbe0]" name="setUp" is-config="true" duration-ms="2624" started-at="2019-03-28T13:47:37Z" finished-at="2019-03-28T13:47:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_PartnerWithUs.Seller@7c16905e]" name="setUp" is-config="true" duration-ms="3634" started-at="2019-03-29T10:21:32Z" finished-at="2019-03-29T10:21:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSeller()[pri:0, instance:BCW_PartnerWithUs.Seller@20e2cbe0]" name="testSeller" duration-ms="16235" started-at="2019-03-28T13:47:40Z" finished-at="2019-03-28T13:47:56Z">
+        <test-method status="PASS" signature="testSeller()[pri:0, instance:BCW_PartnerWithUs.Seller@7c16905e]" name="testSeller" duration-ms="16533" started-at="2019-03-29T10:21:36Z" finished-at="2019-03-29T10:21:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSeller -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_PartnerWithUs.Seller@20e2cbe0]" name="tearDown" is-config="true" duration-ms="878" started-at="2019-03-28T13:47:56Z" finished-at="2019-03-28T13:47:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_PartnerWithUs.Seller@7c16905e]" name="tearDown" is-config="true" duration-ms="799" started-at="2019-03-29T10:21:52Z" finished-at="2019-03-29T10:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- BCW_PartnerWithUs.Seller -->
-      <class name="BCW_PartnerWithUs.Affiliate">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_PartnerWithUs.Affiliate@2a5ca609]" name="setUp" is-config="true" duration-ms="2647" started-at="2019-03-28T13:47:19Z" finished-at="2019-03-28T13:47:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAffiliate()[pri:0, instance:BCW_PartnerWithUs.Affiliate@2a5ca609]" name="testAffiliate" duration-ms="15061" started-at="2019-03-28T13:47:22Z" finished-at="2019-03-28T13:47:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAffiliate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_PartnerWithUs.Affiliate@2a5ca609]" name="tearDown" is-config="true" duration-ms="846" started-at="2019-03-28T13:47:37Z" finished-at="2019-03-28T13:47:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- BCW_PartnerWithUs.Affiliate -->
-    </test> <!-- TEST_PartnerWithUs -->
-  </suite> <!-- PartnerWithUs -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
