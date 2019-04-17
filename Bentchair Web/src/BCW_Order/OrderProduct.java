@@ -65,9 +65,10 @@ public class OrderProduct {
 	    JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 	    executor3.executeScript("arguments[0].click();", TERM);*/
 	    
+	    Thread.sleep(1000);
 	    driver.findElement(By.id("button-payment-method")).click();
 	  
-	    WebDriverWait wait = new WebDriverWait(driver, 10);
+	    WebDriverWait wait = new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.titleContains("Success"));
 	    
 	    Actions action = new Actions(driver);

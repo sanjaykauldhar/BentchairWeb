@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BCW_BentStudio.Gurugram">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testGurugram"/>
-        </methods>
-      </class> <!-- BCW_BentStudio.Gurugram -->
-      <class name="BCW_BentStudio.Bengaluru">
+      <class name="BCW_DreamHome.EndToEnd_Design">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testBengaluru"/>
+          <include name="testEndToEnd_Design"/>
         </methods>
-      </class> <!-- BCW_BentStudio.Bengaluru -->
+      </class> <!-- BCW_DreamHome.EndToEnd_Design -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
