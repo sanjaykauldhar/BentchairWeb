@@ -46,9 +46,9 @@ public class facebookLogin {
     enterPass.sendKeys("Sanj@2904");
     WebElement clickSubmit = driver.findElement(By.id("loginbutton"));
     clickSubmit.click();
-    WebElement enterPass1 = driver.findElement(By.name("pass"));
-    enterPass1.sendKeys("Sanj@2904");
-    driver.findElement(By.id("u_0_0")).submit();
+    //WebElement enterPass1 = driver.findElement(By.name("pass"));
+    //enterPass1.sendKeys("Sanj@2904");
+    //driver.findElement(By.id("u_0_0")).submit();
     
     // Switch back to original browser (first window)
     driver.switchTo().window(winHandleBefore);
