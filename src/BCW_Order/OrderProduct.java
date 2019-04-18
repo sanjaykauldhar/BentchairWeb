@@ -23,6 +23,7 @@ public class OrderProduct {
 
   @Test
   public void testOrderProduct() throws Exception {
+	  //Test Order Update
 	  driver.get("https://www.bentchair.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
