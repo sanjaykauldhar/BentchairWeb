@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BCW_DreamHome.Inhouse_Design">
+      <class name="BCW_Order.OrderProduct">
         <methods>
-          <include name="testInhouse_Design"/>
+          <include name="testOrderProduct"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- BCW_DreamHome.Inhouse_Design -->
-      <class name="BCW_DreamHome.EndToEnd_Design">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testEndToEnd_Design"/>
-        </methods>
-      </class> <!-- BCW_DreamHome.EndToEnd_Design -->
+      </class> <!-- BCW_Order.OrderProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -23,7 +23,7 @@ public class OrderProduct {
 
   @Test
   public void testOrderProduct() throws Exception {
-	  //Test Order Update
+	  //Test Order Update 25-May
 	  driver.get("https://www.bentchair.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -65,9 +65,9 @@ public class OrderProduct {
 	    /*WebElement TERM = driver.findElement(By.name("agree"));
 	    JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 	    executor3.executeScript("arguments[0].click();", TERM);*/
-	    
-	    Thread.sleep(1000);
-	    driver.findElement(By.id("button-payment-method")).click();
+	    WebElement final_pay = driver.findElement(By.id("button-payment-method"));
+	    JavascriptExecutor executor2 = (JavascriptExecutor) driver;
+	    executor2.executeScript("arguments[0].click();", final_pay);
 	  
 	    WebDriverWait wait = new WebDriverWait(driver, 30);
 	    wait.until(ExpectedConditions.titleContains("Success"));
