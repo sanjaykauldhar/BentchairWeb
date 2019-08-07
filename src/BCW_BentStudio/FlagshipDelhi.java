@@ -15,7 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Lucknow {
+public class FlagshipDelhi {
   private WebDriver driver;
   private StringBuffer verificationErrors = new StringBuffer();
 
@@ -27,7 +27,7 @@ public class Lucknow {
   }
 
   @Test
-  public void testLucknow() throws Exception {
+  public void testFlagshipDelhi() throws Exception {
 	  
     driver.get("https://www.bentchair.com/");
     
@@ -36,15 +36,15 @@ public class Lucknow {
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     
     Actions action = new Actions(driver);
-    WebElement we = menu.bent_studio(driver);
+    WebElement we = menu.company(driver);
     action.moveToElement(we).build().perform();
     
-    WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='BENT PROJECTS'])[2]/following::a[1]")));
+    WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(menu.bent_studio(driver)));
     studio.click();
     
-    driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[5]/div[2]/div/a/img")).click();
-    
-    BYA_Form.appointment(driver).click();
+    driver.findElement(By.xpath("//img[contains(@src,'flagship-store.jpg')]")).click();
+ 
+    BYA_Form.appointment(driver);
     
     WebElement form_name = driver.findElement(By.id("form_name"));
     form_name.sendKeys("Test Sanjay");
@@ -56,7 +56,7 @@ public class Lucknow {
     form_contact.sendKeys("9876543210");
     
     WebElement form_company = driver.findElement(By.id("form_company "));
-    form_company.sendKeys("Lucknow Ltd");
+    form_company.sendKeys("Flagship Store Delhi");
     
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::span[2]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Su'])[2]/following::th[1]")).click();
@@ -65,12 +65,14 @@ public class Lucknow {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='FAQ'])[1]/following::span[3]")).click();
     
     WebElement form_message = driver.findElement(By.id("form_message"));
-    form_message.sendKeys("BOOKED AN APPOINTMENT FOR BENT STUDIO LUCKNOW SUCCESSFULLY!");
+    form_message.sendKeys("BOOKED AN APPOINTMENT FOR FLAGSHIP STORE DELHI SUCCESSFULLY!");
     
     WebElement req_agree = driver.findElement(By.id("req_agree"));
     req_agree.click();
     
-    BYA_Form.captcha(driver).sendKeys("test");
+    BYA_Form.submit(driver).click();
+
+    /*BYA_Form.captcha(driver).sendKeys("test");
     
     BYA_Form.submit(driver).click();
     

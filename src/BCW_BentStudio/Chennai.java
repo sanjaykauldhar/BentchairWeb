@@ -2,7 +2,6 @@ package BCW_BentStudio;
 
 import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import PageObjects.BYA_Form;
@@ -36,15 +35,15 @@ public class Chennai {
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     
     Actions action = new Actions(driver);
-    WebElement we = menu.bent_studio(driver);
+    WebElement we = menu.company(driver);
     action.moveToElement(we).build().perform();
     
-    WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='BENT PROJECTS'])[2]/following::a[1]")));
+    WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(menu.bent_studio(driver)));
     studio.click();
     
-    driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[7]/div[2]/div/a/img")).click();
+    driver.findElement(By.xpath("//img[contains(@src,'chennai.jpg')]")).click();
     
-    BYA_Form.appointment(driver).click();
+    BYA_Form.appointment(driver);
     
     WebElement form_name = driver.findElement(By.id("form_name"));
     form_name.sendKeys("Test Sanjay");
@@ -70,7 +69,9 @@ public class Chennai {
     WebElement req_agree = driver.findElement(By.id("req_agree"));
     req_agree.click();
     
-    BYA_Form.captcha(driver).sendKeys("test");
+    BYA_Form.submit(driver).click();
+    
+    /*BYA_Form.captcha(driver).sendKeys("test");
     
     BYA_Form.submit(driver).click();
     
@@ -80,7 +81,7 @@ public class Chennai {
     String expected = "Captcha Does Not Match";
     Assert.assertEquals(actual, expected);
     
-    /*WebDriverWait wait = new WebDriverWait(driver, 30);
+    WebDriverWait wait = new WebDriverWait(driver, 30);
     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='appointment-btn']")));
     */
   }

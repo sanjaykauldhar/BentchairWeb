@@ -3,6 +3,7 @@ package PageObjects;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
@@ -97,9 +98,9 @@ public class BYA_Form{
 	}
 		public static WebElement appointment(WebDriver driver){
 
-			element = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg westend-btn']"));
-
-			return element;
+			WebElement element = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg westend-btn']"));
+		    ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+		    return element;
 
 	}
 		public static WebElement submit(WebDriver driver){

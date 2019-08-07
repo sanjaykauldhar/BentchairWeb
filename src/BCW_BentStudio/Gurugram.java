@@ -36,15 +36,15 @@ public class Gurugram {
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     
     Actions action = new Actions(driver);
-    WebElement we = menu.bent_studio(driver);
+    WebElement we = menu.company(driver);
     action.moveToElement(we).build().perform();
     
-    WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='BENT PROJECTS'])[2]/following::a[1]")));
+    WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(menu.bent_studio(driver)));
     studio.click();
     
-    driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[2]/div[2]/div/a/img")).click();
-    
-    BYA_Form.appointment(driver).click();
+    driver.findElement(By.xpath("//img[contains(@src,'gurugram1.jpg')]")).click();
+
+    BYA_Form.appointment(driver);
     
     WebElement form_name = driver.findElement(By.id("form_name"));
     form_name.sendKeys("Test Sanjay");
@@ -70,7 +70,9 @@ public class Gurugram {
     WebElement req_agree = driver.findElement(By.id("req_agree"));
     req_agree.click();
     
-    BYA_Form.captcha(driver).sendKeys("test");
+    BYA_Form.submit(driver).click();
+
+    /*BYA_Form.captcha(driver).sendKeys("test");
     
     BYA_Form.submit(driver).click();
     
