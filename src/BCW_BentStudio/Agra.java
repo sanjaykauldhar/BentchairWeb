@@ -44,7 +44,9 @@ public class Agra {
     
     driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[5]/div[1]/div/a/img")).click();
     
-    BYA_Form.appointment(driver).click();
+    //BYA_Form.appointment(driver).submit();
+    WebElement element = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg westend-btn']"));
+    ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
     
     WebElement form_name = driver.findElement(By.id("form_name"));
     form_name.sendKeys("Test Sanjay");
@@ -70,15 +72,19 @@ public class Agra {
     WebElement req_agree = driver.findElement(By.id("req_agree"));
     req_agree.click();
     
-    BYA_Form.captcha(driver).sendKeys("test");
+    //BYA_Form.captcha(driver).sendKeys("test");
+    /*Actions actions = new Actions(driver);
+    actions.moveToElement(driver.findElement(By.tagName("body")), 0, 0);
+    actions.moveByOffset(660, 930).click().build().perform();*/
+    
     
     BYA_Form.submit(driver).click();
     
-    Thread.sleep(1000);
+    //Thread.sleep(1000);
     
-    String actual = BYA_Form.error(driver).getText();
+    /*String actual = BYA_Form.error(driver).getText();
     String expected = "Captcha Does Not Match";
-    Assert.assertEquals(actual, expected);
+    Assert.assertEquals(actual, expected);*/
     
     /*WebDriverWait wait = new WebDriverWait(driver, 30);
     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='appointment-btn']")));
@@ -87,7 +93,7 @@ public class Agra {
 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
-	driver.quit();
+	//driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);
