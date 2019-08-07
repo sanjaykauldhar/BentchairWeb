@@ -1,90 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26816" started-at="2019-08-07T11:44:33Z" finished-at="2019-08-07T11:45:00Z">
+  <suite name="BentStudio" duration-ms="251274" started-at="2019-08-07T11:56:05Z" finished-at="2019-08-07T12:00:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26816" started-at="2019-08-07T11:44:33Z" finished-at="2019-08-07T11:45:00Z">
-      <class name="BCW_BentStudio.Gurugram">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Gurugram@7c16905e]" name="setUp" is-config="true" duration-ms="3636" started-at="2019-08-07T11:44:33Z" finished-at="2019-08-07T11:44:36Z">
+    <test name="TEST_BentStudio" duration-ms="251274" started-at="2019-08-07T11:56:05Z" finished-at="2019-08-07T12:00:16Z">
+      <class name="BCW_BentStudio.Chennai">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Chennai@cb5822]" name="setUp" is-config="true" duration-ms="2437" started-at="2019-08-07T11:59:34Z" finished-at="2019-08-07T11:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testGurugram()[pri:0, instance:BCW_BentStudio.Gurugram@7c16905e]" name="testGurugram" duration-ms="22341" started-at="2019-08-07T11:44:36Z" finished-at="2019-08-07T11:44:59Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-M3J39LL', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:18089}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 1eb91ffb8e01a6a0cae9e08121b1f44d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-M3J39LL', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:18089}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 1eb91ffb8e01a6a0cae9e08121b1f44d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at BCW_BentStudio.Gurugram.testGurugram(Gurugram.java:47)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+        <test-method status="PASS" signature="testChennai()[pri:0, instance:BCW_BentStudio.Chennai@cb5822]" name="testChennai" duration-ms="15026" started-at="2019-08-07T11:59:37Z" finished-at="2019-08-07T11:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChennai -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Chennai@cb5822]" name="tearDown" is-config="true" duration-ms="795" started-at="2019-08-07T11:59:52Z" finished-at="2019-08-07T11:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Chennai -->
+      <class name="BCW_BentStudio.Delhi">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Delhi@5c7fa833]" name="setUp" is-config="true" duration-ms="3651" started-at="2019-08-07T11:56:05Z" finished-at="2019-08-07T11:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDelhi()[pri:0, instance:BCW_BentStudio.Delhi@5c7fa833]" name="testDelhi" duration-ms="15098" started-at="2019-08-07T11:56:08Z" finished-at="2019-08-07T11:56:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelhi -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Delhi@5c7fa833]" name="tearDown" is-config="true" duration-ms="750" started-at="2019-08-07T11:56:24Z" finished-at="2019-08-07T11:56:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Delhi -->
+      <class name="BCW_BentStudio.Agra">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Agra@c038203]" name="setUp" is-config="true" duration-ms="2633" started-at="2019-08-07T11:57:57Z" finished-at="2019-08-07T11:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAgra()[pri:0, instance:BCW_BentStudio.Agra@c038203]" name="testAgra" duration-ms="16177" started-at="2019-08-07T11:58:00Z" finished-at="2019-08-07T11:58:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAgra -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Agra@c038203]" name="tearDown" is-config="true" duration-ms="771" started-at="2019-08-07T11:58:16Z" finished-at="2019-08-07T11:58:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Agra -->
+      <class name="BCW_BentStudio.CorporateOfficeDelhi">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.CorporateOfficeDelhi@6767c1fc]" name="setUp" is-config="true" duration-ms="2602" started-at="2019-08-07T11:57:22Z" finished-at="2019-08-07T11:57:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCorporateOfficeDelhi()[pri:0, instance:BCW_BentStudio.CorporateOfficeDelhi@6767c1fc]" name="testCorporateOfficeDelhi" duration-ms="13057" started-at="2019-08-07T11:57:24Z" finished-at="2019-08-07T11:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCorporateOfficeDelhi -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.CorporateOfficeDelhi@6767c1fc]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-08-07T11:57:38Z" finished-at="2019-08-07T11:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.CorporateOfficeDelhi -->
+      <class name="BCW_BentStudio.Hyderabad">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Hyderabad@724af044]" name="setUp" is-config="true" duration-ms="2544" started-at="2019-08-07T11:56:44Z" finished-at="2019-08-07T11:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHyderabad()[pri:0, instance:BCW_BentStudio.Hyderabad@724af044]" name="testHyderabad" duration-ms="14648" started-at="2019-08-07T11:56:46Z" finished-at="2019-08-07T11:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHyderabad -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Hyderabad@724af044]" name="tearDown" is-config="true" duration-ms="742" started-at="2019-08-07T11:57:01Z" finished-at="2019-08-07T11:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Hyderabad -->
+      <class name="BCW_BentStudio.Bengaluru">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Bengaluru@cc285f4]" name="setUp" is-config="true" duration-ms="2476" started-at="2019-08-07T11:58:16Z" finished-at="2019-08-07T11:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBengaluru()[pri:0, instance:BCW_BentStudio.Bengaluru@cc285f4]" name="testBengaluru" duration-ms="16475" started-at="2019-08-07T11:58:19Z" finished-at="2019-08-07T11:58:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBengaluru -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Bengaluru@cc285f4]" name="tearDown" is-config="true" duration-ms="757" started-at="2019-08-07T11:58:35Z" finished-at="2019-08-07T11:58:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Bengaluru -->
+      <class name="BCW_BentStudio.China">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.China@29ee9faa]" name="setUp" is-config="true" duration-ms="2742" started-at="2019-08-07T11:57:38Z" finished-at="2019-08-07T11:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testChina()[pri:0, instance:BCW_BentStudio.China@29ee9faa]" name="testChina" duration-ms="15071" started-at="2019-08-07T11:57:41Z" finished-at="2019-08-07T11:57:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChina -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.China@29ee9faa]" name="tearDown" is-config="true" duration-ms="758" started-at="2019-08-07T11:57:56Z" finished-at="2019-08-07T11:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.China -->
+      <class name="BCW_BentStudio.FlagshipDelhi">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.FlagshipDelhi@4b9e13df]" name="setUp" is-config="true" duration-ms="2629" started-at="2019-08-07T11:59:52Z" finished-at="2019-08-07T11:59:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFlagshipDelhi()[pri:0, instance:BCW_BentStudio.FlagshipDelhi@4b9e13df]" name="testFlagshipDelhi" duration-ms="20192" started-at="2019-08-07T11:59:55Z" finished-at="2019-08-07T12:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlagshipDelhi -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.FlagshipDelhi@4b9e13df]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-08-07T12:00:15Z" finished-at="2019-08-07T12:00:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.FlagshipDelhi -->
+      <class name="BCW_BentStudio.Raipur">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Raipur@8bd1b6a]" name="setUp" is-config="true" duration-ms="2785" started-at="2019-08-07T11:58:55Z" finished-at="2019-08-07T11:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRaipur()[pri:0, instance:BCW_BentStudio.Raipur@8bd1b6a]" name="testRaipur" duration-ms="16303" started-at="2019-08-07T11:58:58Z" finished-at="2019-08-07T11:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaipur -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Raipur@8bd1b6a]" name="tearDown" is-config="true" duration-ms="779" started-at="2019-08-07T11:59:14Z" finished-at="2019-08-07T11:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Raipur -->
+      <class name="BCW_BentStudio.Mumbai">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Mumbai@4678c730]" name="setUp" is-config="true" duration-ms="2558" started-at="2019-08-07T11:57:02Z" finished-at="2019-08-07T11:57:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testMumbai()[pri:0, instance:BCW_BentStudio.Mumbai@4678c730]" name="testMumbai" duration-ms="16682" started-at="2019-08-07T11:57:04Z" finished-at="2019-08-07T11:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMumbai -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Mumbai@4678c730]" name="tearDown" is-config="true" duration-ms="794" started-at="2019-08-07T11:57:21Z" finished-at="2019-08-07T11:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Mumbai -->
+      <class name="BCW_BentStudio.Vadodara">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Vadodara@55f3ddb1]" name="setUp" is-config="true" duration-ms="2739" started-at="2019-08-07T11:58:36Z" finished-at="2019-08-07T11:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testVadodara()[pri:0, instance:BCW_BentStudio.Vadodara@55f3ddb1]" name="testVadodara" duration-ms="15657" started-at="2019-08-07T11:58:39Z" finished-at="2019-08-07T11:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVadodara -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Vadodara@55f3ddb1]" name="tearDown" is-config="true" duration-ms="779" started-at="2019-08-07T11:58:55Z" finished-at="2019-08-07T11:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Vadodara -->
+      <class name="BCW_BentStudio.Tirupati">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Tirupati@18be83e4]" name="setUp" is-config="true" duration-ms="2729" started-at="2019-08-07T11:59:15Z" finished-at="2019-08-07T11:59:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testTirupati()[pri:0, instance:BCW_BentStudio.Tirupati@18be83e4]" name="testTirupati" duration-ms="15419" started-at="2019-08-07T11:59:18Z" finished-at="2019-08-07T11:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTirupati -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Tirupati@18be83e4]" name="tearDown" is-config="true" duration-ms="755" started-at="2019-08-07T11:59:33Z" finished-at="2019-08-07T11:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BCW_BentStudio.Tirupati -->
+      <class name="BCW_BentStudio.Gurugram">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BCW_BentStudio.Gurugram@39aeed2f]" name="setUp" is-config="true" duration-ms="2574" started-at="2019-08-07T11:56:24Z" finished-at="2019-08-07T11:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGurugram()[pri:0, instance:BCW_BentStudio.Gurugram@39aeed2f]" name="testGurugram" duration-ms="16246" started-at="2019-08-07T11:56:27Z" finished-at="2019-08-07T11:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGurugram -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Gurugram@7c16905e]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-08-07T11:44:59Z" finished-at="2019-08-07T11:45:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BCW_BentStudio.Gurugram@39aeed2f]" name="tearDown" is-config="true" duration-ms="779" started-at="2019-08-07T11:56:43Z" finished-at="2019-08-07T11:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- BCW_BentStudio.Gurugram -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TEST_BentStudio -->
+  </suite> <!-- BentStudio -->
 </testng-results>

@@ -2,9 +2,20 @@
  
  <test name="TEST_BentStudio">
  <classes>
- <class name="BCW_Login.bentchairLogin" />
- <class name="BCW_Login.facebookLogin" />
- <class name="BCW_Login.googleLogin" />
+ <class name="BCW_BentStudio.Delhi" />
+ <class name="BCW_BentStudio.Gurugram" />
+  <class name="BCW_BentStudio.Hyderabad" />
+   <class name="BCW_BentStudio.Mumbai" />
+    <class name="BCW_BentStudio.CorporateOfficeDelhi" />
+   <class name="BCW_BentStudio.China" />
+     <class name="BCW_BentStudio.Agra" />
+        <class name="BCW_BentStudio.Bengaluru" />
+        <class name="BCW_BentStudio.Vadodara" />
+           <class name="BCW_BentStudio.Raipur" />
+           <class name="BCW_BentStudio.Tirupati" />
+              <class name="BCW_BentStudio.Chennai" />
+                 <class name="BCW_BentStudio.FlagshipDelhi" />
+           
  </classes>
  </test>
  

@@ -14,7 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Gurugram {
+public class Vadodara {
   private WebDriver driver;
   private StringBuffer verificationErrors = new StringBuffer();
 
@@ -26,7 +26,7 @@ public class Gurugram {
   }
 
   @Test
-  public void testGurugram() throws Exception {
+  public void testVadodara() throws Exception {
 	  
     driver.get("https://www.bentchair.com/");
     
@@ -41,7 +41,7 @@ public class Gurugram {
     WebElement studio =(WebElement)new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(menu.bent_studio(driver)));
     studio.click();
     
-    driver.findElement(By.xpath("//img[contains(@src,'gurugram1.jpg')]")).click();
+    driver.findElement(By.xpath("//img[contains(@src,'vadodara2.jpg')]")).click();
 
     BYA_Form.appointment(driver);
     
@@ -55,7 +55,7 @@ public class Gurugram {
     form_contact.sendKeys("9876543210");
     
     WebElement form_company = driver.findElement(By.id("form_company "));
-    form_company.sendKeys("Gurugram Ltd");
+    form_company.sendKeys("Vadodara ltd");
     
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::span[2]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Su'])[2]/following::th[1]")).click();
@@ -64,13 +64,12 @@ public class Gurugram {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='FAQ'])[1]/following::span[3]")).click();
     
     WebElement form_message = driver.findElement(By.id("form_message"));
-    form_message.sendKeys("BOOKED AN APPOINTMENT FOR BENT STUDIO GURUGRAM SUCCESSFULLY!");
+    form_message.sendKeys("BOOKED AN APPOINTMENT FOR BENT STUDIO VADODARA SUCCESSFULLY!");
     
     WebElement req_agree = driver.findElement(By.id("req_agree"));
     req_agree.click();
     
     BYA_Form.submit(driver).click();
-
     /*BYA_Form.captcha(driver).sendKeys("test");
     
     BYA_Form.submit(driver).click();
@@ -81,7 +80,7 @@ public class Gurugram {
     String expected = "Captcha Does Not Match";
     Assert.assertEquals(actual, expected);
     
-    /*WebDriverWait wait = new WebDriverWait(driver, 30);
+    WebDriverWait wait = new WebDriverWait(driver, 30);
     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='appointment-btn']")));
     */
   }
