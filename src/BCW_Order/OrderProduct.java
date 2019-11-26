@@ -27,7 +27,7 @@ public class OrderProduct {
   @Test
   public void testOrderProduct() throws Exception {
 	  //Test Order Update 25-May
-	  driver.get("https://demo.bentchair.com/");
+	  driver.get("https://www.bentchair.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='د.إ UAE'])[1]/following::a[1]")).click();
