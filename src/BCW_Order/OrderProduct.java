@@ -3,6 +3,9 @@ package BCW_Order;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
+
+import PageObjects.Home_Page;
+
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,11 +31,10 @@ public class OrderProduct {
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='د.إ UAE'])[1]/following::a[1]")).click();
-	    driver.findElement(By.id("input-email")).click();
-	    driver.findElement(By.id("input-email")).clear();
-	    driver.findElement(By.id("input-email")).sendKeys("sanjay.kauldhar@bentchair.com");
-	    driver.findElement(By.id("input-password")).clear();
-	    driver.findElement(By.id("input-password")).sendKeys("sanjay");
+	    Home_Page.email(driver).clear();
+	    Home_Page.email(driver).sendKeys("sanjay.kauldhar@bentchair.com");
+	    Home_Page.password(driver).clear();
+	    Home_Page.password(driver).sendKeys("sanjay");
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Recover Password'])[1]/preceding::input[1]")).click();
 	    driver.findElement(By.id("filter_names")).click();
 	    driver.findElement(By.id("filter_names")).clear();
