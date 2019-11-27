@@ -26,7 +26,7 @@ public class OrderProduct {
 
   @Test
   public void testOrderProduct() throws Exception {
-	  //Test Order Update 25-May
+	  //Test Order Update 27-11
 	  driver.get("https://www.bentchair.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
