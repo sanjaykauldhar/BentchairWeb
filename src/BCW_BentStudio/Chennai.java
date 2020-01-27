@@ -78,7 +78,7 @@ public class Chennai {
     
     /*WebDriverWait wait = new WebDriverWait(driver, 30);
     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='form_sub_btn']")));
-    ss*/
+    */
   }
 
   @AfterClass(alwaysRun = true)
