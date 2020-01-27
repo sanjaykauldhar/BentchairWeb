@@ -2,6 +2,7 @@ package BCW_BentStudio;
 
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import PageObjects.BYA_Form;
@@ -54,15 +55,13 @@ public class Chennai {
     WebElement form_contact = driver.findElement(By.id("form_contact"));
     form_contact.sendKeys("9876543210");
     
-    WebElement form_company = driver.findElement(By.id("form_company "));
-    form_company.sendKeys("Chennai Ltd");
-    
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::span[2]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Su'])[2]/following::th[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::span[4]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::span[7]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='FAQ'])[1]/following::span[3]")).click();
-    
+    driver.findElement(By.xpath("//input[@id='form_company ']")).sendKeys("Test Chennai Studio Appointment");
+    driver.findElement(By.xpath("//span[@class='glyphicon glyphicon-calendar']")).click();
+    driver.findElement(By.xpath("//div[4]/div[3]/table/tfoot/tr/th")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath("//span[@class='glyphicon glyphicon-time']")).click();
+    driver.findElement(By.xpath("//div[2]/table/tbody/tr/td/span[2]")).click();
+    driver.findElement(By.xpath("//td/span[2]")).click();
     WebElement form_message = driver.findElement(By.id("form_message"));
     form_message.sendKeys("BOOKED AN APPOINTMENT FOR BENT STUDIO CHENNAI SUCCESSFULLY!");
     
@@ -70,25 +69,21 @@ public class Chennai {
     req_agree.click();
     
     BYA_Form.submit(driver).click();
-    
-    /*BYA_Form.captcha(driver).sendKeys("test");
-    
-    BYA_Form.submit(driver).click();
-    
+        
     Thread.sleep(1000);
     
     String actual = BYA_Form.error(driver).getText();
-    String expected = "Captcha Does Not Match";
+    String expected = "Please check 'I'm not a robot'.";
     Assert.assertEquals(actual, expected);
     
-    WebDriverWait wait = new WebDriverWait(driver, 30);
-    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='appointment-btn']")));
+    /*WebDriverWait wait = new WebDriverWait(driver, 30);
+    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='form_sub_btn']")));
     */
   }
 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
-	driver.quit();
+	//driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);

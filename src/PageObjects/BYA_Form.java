@@ -98,10 +98,11 @@ public class BYA_Form{
 	}
 		public static WebElement appointment(WebDriver driver){
 
-			WebElement element = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg westend-btn']"));
+			//WebElement element = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg westend-btn']"));
+			WebElement element = driver.findElement(By.xpath("//button[@class='hidden-xs btn btn-primary btn-lg westend-btn']"));
 		    ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
 		    return element;
-
+		    
 	}
 		public static WebElement submit(WebDriver driver){
 
